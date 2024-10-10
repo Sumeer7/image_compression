@@ -13,12 +13,12 @@ import os
 # Add the parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from image_compression.db.my_sql_connection import MySQLConnection
-from image_compression.models.request import RequestModel
-from image_compression.models.product import ProductModel
-from image_compression.models.image import ImageModel
+from db.my_sql_connection import MySQLConnection
+from models.request import RequestModel
+from models.product import ProductModel
+from models.image import ImageModel
 
-from image_compression.utils.validate_csv_file import validate_csv
+from utils.validate_csv_file import validate_csv
 
 app = Flask(__name__)
 
